@@ -1,0 +1,51 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+button,
+.interval {
+  background: none;
+  border: none;
+  color: #555555;
+  cursor: pointer;
+  font: normal normal normal 14px/14px PT Sans;
+  letter-spacing: 0px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 0 8px;
+}
+.interval {
+  padding: 8px 0;
+}
+button.arrows {
+  background: none;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+}
+button.number, button.arrows:hover {
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  border: 1px solid #e5e5e5;
+}
+button.number:hover,
+button.number.active {
+  color: #ffffff;
+  background: #167abc 0% 0% no-repeat padding-box;
+  border: 1px solid #167abc;
+}
+
+@media (max-width: 420px) {
+  button,.interval {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 0 3px;
+  }
+  .interval {
+    padding: 0;
+  }
+  button.arrows {
+    padding: 0;
+  }
+}
